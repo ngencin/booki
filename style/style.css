@@ -1,0 +1,889 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: "Raleway", "Sans serif";
+    max-width: 100%;
+}
+
+main{
+    margin: auto;
+    padding: 5%;
+}
+
+
+/*NAVBAR*/
+
+.headerNavbar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.headerNavbar a{
+    text-decoration: none;
+}
+
+.headerNavbar a:hover{
+    border-top: 3px blue solid;
+    padding-top: 32px;
+    transition-duration: 0.1s;
+}
+
+.headerMenu{
+    background: none;
+    margin-right: 5%;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+.headerMenu .headerMenuList{
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.headerImg{
+    display: flex;
+    width: 110px;
+}
+
+.headerLogo{
+    margin-left: 5%;
+}
+
+
+/*SEARCH*/
+
+.map{
+    border:  2px solid #F2F2F2;
+    padding: 0 50px 0 15px;
+}    
+
+.searchForm{
+    display: inline-flex;
+    overflow: auto;
+}
+
+.searchFormIcon {
+    background-color: #F2F2F2;
+    border-radius: 16px 0 0 18px;
+    padding: 16px 17px;
+    text-align: center;
+}
+
+.search button{
+    border: none;
+    background-color: #0065FC;
+    border-radius: 0 16px 18px 0;
+    color: white;
+    font-size: 18px;
+    font-family: "Raleway", "Sans serif";
+    font-weight: bolder;
+    font-family: 'raleway';
+    padding: 0 20px;
+    text-align: center;
+}
+    
+.search button>i{
+    display: none;
+}
+
+.map::placeholder{
+    align-items: center;
+    color:#000;
+    font-size: 18px;
+    font-weight:bolder;
+    font-family: 'raleway';
+}
+
+.search h1{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'raleway';
+    line-height: 10px;
+    margin-top: 40px;
+}
+
+
+/*FILTERS*/
+
+.filters{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.filters h2{
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'raleway';
+}
+
+.filtersCategory{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.filtersCategory > div{
+    align-items: center;
+    border-radius: 50px;
+    border:  2px solid #d9d9d9;
+    display: flex; 
+    height: 45px;
+    margin: 15px;
+}
+
+.filtersCategory > div p{
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'raleway';
+    margin: 15px;
+}
+
+.filtersIcon{
+    align-items: center;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    color: #0065fc; 
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-left: -4px;
+    min-width: 50px;
+    min-height: 50px;
+    width: 40px;
+}
+
+.filtersResult{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtersResult i{
+    align-items: center;
+    border-radius: 100%;
+    border: solid 1px #d9d9d9;
+    color: #0065fc;
+    display: flex;
+    height: 15px;
+    justify-content: center;
+    margin-right: 5px;
+    min-width: 20px;
+    min-height: 20px;
+    width: 15px;
+}
+    
+
+/*HOSTINGS*/
+
+.hosting{
+    border-radius: 1.5rem;
+    background-color: #F2F2F2;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hostingCity{
+    column-gap: 30px;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 2.5fr 1fr;
+    width: 100%;
+}
+   
+.hostingHeader{
+    grid-column:1/-1;
+    margin-left: 1%;
+}
+
+.hostingCard{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    box-sizing: border-box; 
+    height: auto;
+    padding: 5px;
+    transition-duration: 0.1s;
+}
+
+.hostingCard:hover{
+    transform: scale(1.02);
+}
+
+.hostingCard a{
+    text-decoration: none;
+}
+
+.descriptionCard{
+    margin:0;
+}
+
+.descriptionCard figcaption{
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.hostingCard p{
+    color: #000;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.hostingCard p>span{
+    font-weight: bold;
+}
+
+.hostingCard .descriptionStars{
+    color: #0065fc;
+    margin-left: 10px;
+}
+
+.hostingCard .descriptionStars [data-active=false]{
+    color:#d9d9d9;
+}
+
+.descriptionImg{
+    border-radius: 15px 15px 0 0;
+    height: 112px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.hostingViewMore{
+    font-weight: bold;
+}
+
+.hostingViewMore a{
+    color:#000;
+    text-decoration: none;
+}
+
+.hostingViewMore a:hover{
+    color: blue;
+}
+
+
+/* POPULAR */
+
+.hostingPopular h2{
+    margin-left: 3%;
+}
+
+.hostingPopular h2 > i{
+    float: right;
+    padding-right: 15px;
+}
+
+.hostingPopular{
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.hostingPopularCard{
+    background-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 16px #0000002e;
+    height: 150px;
+    margin-top: -25px;
+    margin-left: 7%;
+    width: 85%;
+}
+
+.descriptionPopularCard{
+    border-radius: 20px 0 0 20px;
+}
+
+.hostingPopular a{
+    text-decoration: none;
+}
+
+.descriptionPopularText{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 25%;
+    width: 100%;
+}
+
+.descriptionPopularText figcaption{
+    color: #000;
+    font-weight: bold;
+}
+
+.descriptionPopularText p{
+    color:#000;
+    font-size: 15px;
+}
+
+.descriptionPopularText p>span{
+    font-weight: bold;
+}
+
+.descriptionPopularText>.descriptionStars [data-active=false]{
+    color:#d9d9d9;
+}
+
+.descriptionPopularText >.descriptionStars{
+    color: #0065fc;
+}
+
+.descriptionPopularImg img{
+    border-radius: 20px 0 0 20px;
+    height: 142px;
+    margin-top: 4px;
+    margin-left: -35px; 
+    object-fit: cover;
+    position:absolute;
+    width: 110px;
+}
+
+.hostingPopularCard:hover{
+    transform: scale(1.02);
+}
+
+.activity{
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+}
+
+.activity a{
+    width: 350px;
+}
+
+.activityCard{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.activityCard h4{
+    color: #000;
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 15px 15px 15px 15px;
+}
+
+.activityCard a{
+    text-decoration: none;
+}
+
+.activity1{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px lightgrey;
+    height: 500px;
+    width: 25%;
+}
+
+.activity1 img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 450px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.activity1:hover{
+    transform: scale(1.02);
+}
+
+.activityColumn{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.activity2{ 
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px lightgrey;
+    height: 275px;
+    width: 100%;
+}
+
+.activity2 img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 230px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.activity2:hover{
+    transform: scale(1.02);
+}
+
+.activity3{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px lightgrey;
+    height: 195px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.activity3 img{ 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 145px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.activity3:hover{
+    transform: scale(1.02);
+}
+
+.activity4{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px lightgrey;
+    height: 500px;
+    width: 25%;
+}
+
+.activity4 img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 450px;
+    max-width: 100%;    
+    object-fit: cover;
+}
+
+.activity4:hover{
+    transform: scale(1.02);
+}
+
+.activity5{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px lightgrey; 
+    height: 230px;
+    width: 100%;
+}
+
+.activity5 img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}  
+
+.activity5:hover{
+    transform: scale(1.02);
+}
+
+.activity6{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px lightgrey;
+    height: 240px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.activity6 img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 190px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.activity6:hover{
+    transform: scale(1.02);
+}
+
+
+/*FOOTER*/
+
+footer{
+    background: #F2F2F2;
+    width: 100%;
+}
+
+.footerColumn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footerColumn li{
+    list-style: none;
+    text-align: left;
+}
+
+
+/*MEDIA QUERIES*/
+
+                        @media (min-width: 320px) and (max-width: 480px) {
+
+                            main{
+                                margin: 0;
+                                padding: 0;
+                                width: 100%;
+                            }
+                        
+                            .headerLogo img{
+                                margin-left: 100px;
+                            }
+
+                            .headerNavbar{
+                                align-items:flex-start;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                            }
+
+                            .search{
+                                margin-left: 3%;
+                                text-align: left;
+                            }
+
+                            .search h1{
+                                font-family: 'raleway';
+                                font-size: 20px;
+                                font-weight: bolder;
+                                line-height: 18px;
+                                margin-top: 40px;
+                            }
+                            
+                            .search button>span{
+                                display: none;
+                            }
+
+                            .search button>i{
+                                display: block;
+                            }
+
+                            .map{
+                                width:63%;    
+                            }
+                            
+                            .map::placeholder{
+                                font-size: 15px;
+                                width: 100%;
+                            }
+                                
+                            .filters h2{
+                                margin-left: 3%;
+                            }
+
+                            .filtersResult{
+                                margin-left: 3%;
+                            }
+
+                            .hostingCity{
+                                display: flex;
+                                gap: 30px;
+                                flex-direction: column-reverse;
+                            }
+
+                            .hosting{
+                                background: none;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            
+                            .hostingPopular{
+                                border-radius: 0 0 0 0;
+                                height: 600px;
+                            }
+
+                            .descriptionPopularText{
+                                padding-left: 45%;
+                                width: 75%;
+                            }
+
+                            .activityColumn{
+                                width: 100%;
+                            }
+
+                            .activityCard{
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                            }
+
+                            .activity1{
+                                height: 100px;
+                                width: 100%;
+                            }
+
+                            .activity1 img{
+                                height: 50%;
+                                width: 100%;
+                            }
+
+                            .activity2{
+                                height: 100px;
+                                width: 100%;
+                            }
+
+                            .activity2 img{
+                                height: 50%;
+                                width: 100%;
+                            }
+
+                            .activity3{
+                                height: 100px;
+                                width: 100%;
+                            }
+
+                            .activity3 img{
+                                height: 50%;
+                                width: 100%;
+                            }
+
+                            .activity4{
+                                height: 100px;
+                                width: 100%;
+                            }
+
+                            .activity4 img{
+                                height: 50%;
+                                width: 100%;
+                            }
+                        
+                            .activity5{
+                               height: 100px; 
+                               width: 100%;
+                            }
+
+                            .activity5 img{
+                                height: 50%;
+                                width: 100%;
+                            }
+
+                            .activity6{
+                                height: 100px;
+                                width: 100%;
+                            }
+                              
+                            .activity6 img{
+                                height: 50%;
+                                width: 100%;
+                            }
+
+                            .footerColumn{
+                                margin-left: 10px;
+                                flex-direction: column;
+                                width: 100%;
+                            }
+                        }
+
+                        @media (min-width: 481px) and (max-width: 767px) {
+                        
+                            main{
+                                margin: 0;
+                                padding: 0;
+                                width: 100%;
+                            }
+
+                            .headerNavbar{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                            }
+
+                            .hostingCity{
+                                display: flex;
+                                gap: 30px;
+                                flex-direction: column-reverse;
+                            }
+
+                            .hosting{
+                                background: none;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            
+                            .search{
+                                margin-left: 3%;
+                                text-align: left;
+                            }
+
+                            .search h1{
+                                font-weight: bolder;
+                                font-family: 'raleway';
+                                font-size: 20px;
+                                line-height: 18px;
+                                margin-top: 40px;
+                            }
+                                
+                            .search button>span{
+                                display: none;
+                            }
+                            
+                            .search button>i{
+                                display: block;
+                            }
+                            
+                            .map{
+                                width:63%;    
+                            }
+                                
+                            .map::placeholder{
+                                font-size: 15px;
+                                width: 100%;
+                            }
+                            
+                            .filters h2{
+                                margin-left: 3%;
+                            }
+
+                            .filtersResult{
+                                margin-left: 3%;
+                            }
+
+                            .hostingPopular{
+                                border-radius: 0 0 0 0;
+                                height: 600px;
+                            }
+                            
+                            .descriptionPopularText{
+                                padding-left: 20%;
+                                width: 75%;
+                            }
+                            
+                            .activityColumn{
+                                width: 100%;
+                            }
+                            
+                            .activityCard{
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                            }
+
+                            .activity1{
+                                height: 150px;
+                                width: 100%;
+                            }
+                            
+                            .activity1 img{
+                                height: 65%;
+                                width: 100%;
+                            }
+                            
+                            .activity2{
+                                height: 150px;
+                                width: 100%;
+                            }
+                            
+                            .activity2 img{
+                                height: 65%;
+                                width: 100%;
+                            }
+                            
+                            .activity3{
+                                height: 150px;
+                                width: 100%;
+                            }
+                            
+                            .activity3 img{
+                                height: 65%;
+                                width: 100%;
+                            }
+
+                            .activity4{
+                                height: 150px;
+                                width: 100%;
+                            }
+
+                            .activity4 img{
+                                height: 65%;
+                                width: 100%;
+                            }
+
+                            .activity5{
+                                height: 150px; 
+                                width: 100%;
+                            }
+
+                            .activity5 img{
+                                height: 65%;
+                                width: 100%;
+                            }
+
+                            .activity6{
+                                height: 150px;
+                                width: 100%;
+                            }
+
+                            .activity6 img{
+                                height: 65%;
+                                width: 100%;
+                            }
+
+                            .footerColumn{
+                                margin-left: 10px;
+                                flex-direction: column;
+                                width: 100%;
+                            }
+                                
+                        }
+
+                        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+                        
+                            .hostingCity{
+                                display: flex;
+                                gap: 30px;
+                                flex-direction: column-reverse;
+                            }
+
+                            .hosting{
+                                background: none;
+                                display: grid;
+                            }
+
+                            .hostingPopular{
+                                height: 600px;
+                            }
+
+                            .descriptionPopularText{
+                                padding-left: 18%;
+                            }
+
+                            .activity2 h4{
+                                margin-top: -1px;
+                            }
+
+                            .activity4 h4{
+                                margin-top: -1px;
+                            }
+
+                            .activity5 h4{
+                                margin-top: -1px;
+                            }
+
+                            .activity6 h4{
+                                margin-top: -1px;
+                            }
+
+                        }
