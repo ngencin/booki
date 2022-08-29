@@ -263,9 +263,9 @@ header {
 /* POPULAR */
 
 .hostingPopularTitle {
-    padding: 0;
     display: flex;
     justify-content: space-around;
+    padding: 0;
 }
 
 .hostingPopular{
@@ -515,20 +515,7 @@ footer{
 .footerColumn{
     display: flex;
     flex-direction: row;
-    padding-left: 12%;
-    width: 100%;
-    
-}
-
-.aboutFooter{
-    width: 100%;
-}
-
-.hostingFooter{
-    width: 100%;
-}
-
-.assistanceFooter{
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -632,72 +619,82 @@ footer{
                             }
 
                             .activity1{
-                                height: 100px;
+                                height: 120px;
                                 width: 100%;
                             }
 
                             .activity1 img{
-                                height: 50%;
+                                height: 65%;
                                 width: 100%;
                             }
 
                             .activity2{
-                                height: 100px;
+                                height: 120px;
                                 width: 100%;
                             }
 
                             .activity2 img{
-                                height: 50%;
+                                height: 65%;
                                 width: 100%;
                             }
 
                             .activity3{
-                                height: 100px;
+                                height: 120px;
                                 width: 100%;
                             }
 
                             .activity3 img{
-                                height: 50%;
+                                height: 65%;
                                 width: 100%;
                             }
 
                             .activity4{
-                                height: 100px;
+                                height: 120px;
                                 width: 100%;
                             }
 
                             .activity4 img{
-                                height: 50%;
+                                height: 65%;
                                 width: 100%;
                             }
                         
                             .activity5{
-                               height: 100px; 
+                               height: 120px; 
                                width: 100%;
                             }
 
                             .activity5 img{
-                                height: 50%;
+                                height: 65%;
                                 width: 100%;
                             }
 
                             .activity6{
-                                height: 100px;
+                                height: 120px;
                                 width: 100%;
                             }
                               
                             .activity6 img{
-                                height: 50%;
+                                height: 65%;
                                 width: 100%;
                             }
 
                             .footerColumn{
-                                margin-left: 10px;
+                                padding-left: 10px;
                                 flex-direction: column;
                                 width: 100%;
                             }
 
+                            .aboutFooter{
+                                width: 100%;
+                            }
                             
+                            .hostingFooter{
+                                width: 100%;
+                            }
+                            
+                            .assistanceFooter{
+                                width: 100%;
+                            }
                         }
 
                         @media (min-width: 481px) and (max-width: 767px) {
