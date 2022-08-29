@@ -12,16 +12,20 @@ main{
 
 
 /*NAVBAR*/
-
-.headerNavbar{
-    align-items: center;
+header {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 80px;
+}
+.headerImg{
+    margin-right: auto;
 }
 
-.headerNavbar a{
-    text-decoration: none;
+.headerNavbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
 }
 
 .headerNavbar a:hover{
@@ -30,26 +34,6 @@ main{
     transition-duration: 0.1s;
 }
 
-.headerMenu{
-    background: none;
-    margin-right: 5%;
-    padding-bottom: 3px;
-    text-decoration: none;
-}
-
-.headerMenu .headerMenuList{
-    display: inline-block;
-    padding: 20px 10px;
-}
-
-.headerImg{
-    display: flex;
-    width: 110px;
-}
-
-.headerLogo{
-    margin-left: 5%;
-}
 
 
 /*SEARCH*/
@@ -190,6 +174,10 @@ main{
     padding-left: 10px;
     padding-right: 10px;
 }
+.hostingHeader{
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
 
 .hostingCity{
     column-gap: 30px;
@@ -199,10 +187,7 @@ main{
     width: 100%;
 }
    
-.hostingHeader{
-    grid-column:1/-1;
-    margin-left: 1%;
-}
+
 
 .hostingCard{
     background-color: white;
@@ -277,13 +262,10 @@ main{
 
 /* POPULAR */
 
-.hostingPopular h2{
-    margin-left: 3%;
-}
-
-.hostingPopular h2 > i{
-    float: right;
-    padding-right: 15px;
+.hostingPopularTitle {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .hostingPopular{
@@ -322,7 +304,7 @@ main{
     width: 100%;
 }
 
-.descriptionPopularText figcaption{
+.descriptionPopularText h4{
     color: #000;
     font-weight: bold;
 }
@@ -365,6 +347,10 @@ main{
     padding: 20px;
     width: 100%;
 }
+.activityTitle{
+    justify-content: left;
+    padding: 0;
+}
 
 .activity a{
     width: 350px;
@@ -378,16 +364,16 @@ main{
     width: 100%;
 }
 
+.activityCard a{
+    text-decoration: none;
+}
+
 .activityCard h4{
     color: #000;
     display: flex;
     font-size: 15px;
     font-weight: 400;
     margin: 15px 15px 15px 15px;
-}
-
-.activityCard a{
-    text-decoration: none;
 }
 
 .activity1{
@@ -529,13 +515,21 @@ footer{
 .footerColumn{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    text-align: left;
+    padding-left: 12%;
+    width: 100%;
+    
 }
 
-.footerColumn li{
-    list-style: none;
-    text-align: left;
+.aboutFooter{
+    width: 100%;
+}
+
+.hostingFooter{
+    width: 100%;
+}
+
+.assistanceFooter{
+    width: 100%;
 }
 
 
@@ -548,17 +542,20 @@ footer{
                                 padding: 0;
                                 width: 100%;
                             }
-                        
-                            .headerLogo img{
-                                margin-left: 100px;
+                            .headerNavbar ul{
+                              display: grid;
+                              grid-template-columns: 1fr 1fr;
+                              margin-left: 15%;
                             }
-
-                            .headerNavbar{
-                                align-items:flex-start;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-around;
+                            
+                            header{
+                                display: grid;
                             }
+                           
+                            .headerImg{
+                                margin-left: 50%;
+                            }
+                            
 
                             .search{
                                 margin-left: 3%;
@@ -613,6 +610,10 @@ footer{
                             .hostingPopular{
                                 border-radius: 0 0 0 0;
                                 height: 600px;
+                            }
+
+                            .hostingPopular >header h2{
+                                width: 100%;
                             }
 
                             .descriptionPopularText{
@@ -695,6 +696,8 @@ footer{
                                 flex-direction: column;
                                 width: 100%;
                             }
+
+                            
                         }
 
                         @media (min-width: 481px) and (max-width: 767px) {
@@ -865,9 +868,10 @@ footer{
                             .hostingPopular{
                                 height: 600px;
                             }
-
+                            
                             .descriptionPopularText{
                                 padding-left: 18%;
+                                
                             }
 
                             .activity2 h4{
@@ -888,5 +892,47 @@ footer{
 
                           
                         }  
+
+                        @media (min-width: 1025px) and (max-width: 1440px) {
+
+                            .hostingCity{
+                                display: flex;
+                                gap: 30px;
+                                flex-direction: column-reverse;
+                                width: 100%;
+                            }
+
+                            .hostingPopular{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                height: 200px;
+                                align-items: center;                                
+                            }
+                            
+                            .hostingPopular >*{
+                                flex: 1 1 0;
+                            }
+                            .hostingPopularCard{
+                                width: 100%;
+                                margin-left: -10px;
+                            }
+                            .descriptionPopularImg img{
+                                width: 70px;
+                            }
+                            .descriptionPopularText{
+                                padding-left: 40px;
+                                width: 95%;
+                                font-size: 12px;
+                            }
+                          }
+
+                        @media (min-width: 1281px) {
+  
+                            .descriptionPopularText{
+                                padding-left: 25%;
+                            }
+                            
+                          }
                                 
                        
