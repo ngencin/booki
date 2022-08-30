@@ -26,10 +26,14 @@ header {
     list-style: none;
     display: inline-block;
     padding: 0 20px;
+    
+}
+.headerNavbar li>a{
+    text-decoration: none;
 }
 
 .headerNavbar a:hover{
-    border-top: 3px blue solid;
+    border-top: 5px blue solid;
     padding-top: 32px;
     transition-duration: 0.1s;
 }
@@ -529,21 +533,41 @@ footer{
                                 padding: 0;
                                 width: 100%;
                             }
-                            .headerNavbar ul{
-                              display: grid;
-                              grid-template-columns: 1fr 1fr;
-                              margin-left: 15%;
+                            .headerNavbar {
+                                width: 100%;
+                                padding: 0;
                             }
-                            
-                            header{
+                            .headerNavbar ul{
+                                padding-bottom: 15px;
+                                border-bottom: solid #F2F2F2 3px;
                                 display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                width: auto;
                             }
                            
-                            .headerImg{
-                                margin-left: 50%;
+                            .headerNavbar a:hover{
+                                border-top: none;
                             }
                             
+                            .headerNavbarLi :hover{
+                                padding-bottom: 15px;
+                                border-bottom: 3px blue solid;
+                                transition-duration: 0.1s;
+                                width: 100%;
+                            }
 
+                            .headerImg{
+                                padding-left: 30%;
+                                
+                            }
+                            header{
+                                display: grid;
+                                width: 100%;
+                                padding: 0;
+                
+                            }
+                            
+                        
                             .search{
                                 margin-left: 3%;
                                 text-align: left;
@@ -679,7 +703,7 @@ footer{
                             }
 
                             .footerColumn{
-                                padding-left: 10px;
+                            margin-left: 10px;
                                 flex-direction: column;
                                 width: 100%;
                             }
