@@ -25,17 +25,18 @@ header {
 .headerNavbar li{
     list-style: none;
     display: inline-block;
-    padding: 0 20px;
-    
+    padding: 0 20px;    
 }
 .headerNavbar li>a{
     text-decoration: none;
+    color:#000;
 }
 
 .headerNavbar a:hover{
-    border-top: 5px blue solid;
+    border-top: 5px #0065FC solid;
     padding-top: 32px;
     transition-duration: 0.1s;
+    color:#0065FC;
 }
 
 
@@ -122,6 +123,10 @@ header {
     height: 45px;
     margin: 15px;
 }
+.filtersCategory >div :hover{
+     color: #0065FC;
+
+}
 
 .filtersCategory > div p{
     align-items: center;
@@ -140,11 +145,12 @@ header {
     display: flex;
     height: 40px;
     justify-content: center;
-    margin-left: -4px;
-    min-width: 50px;
-    min-height: 50px;
+    margin-left: -3px;
+    min-width: 47px;
+    min-height: 47px;
     width: 40px;
 }
+
 
 .filtersResult{
     align-items: center;
@@ -169,7 +175,7 @@ header {
 
 /*HOSTINGS*/
 
-.hosting{
+#hosting{
     border-radius: 1.5rem;
     background-color: #F2F2F2;
     display: grid;
@@ -190,8 +196,6 @@ header {
     grid-template-columns: 2.5fr 1fr;
     width: 100%;
 }
-   
-
 
 .hostingCard{
     background-color: white;
@@ -344,7 +348,7 @@ header {
     transform: scale(1.02);
 }
 
-.activity{
+#activity{
     border-radius: 20px;
     box-sizing: border-box;
     margin-top: 50px;
@@ -356,7 +360,7 @@ header {
     padding: 0;
 }
 
-.activity a{
+#activity a{
     width: 350px;
 }
 
@@ -612,7 +616,7 @@ footer{
                                 flex-direction: column-reverse;
                             }
 
-                            .hosting{
+                            #hosting{
                                 background: none;
                                 display: flex;
                                 flex-direction: column;
@@ -741,7 +745,7 @@ footer{
                                 flex-direction: column-reverse;
                             }
 
-                            .hosting{
+                            #hosting{
                                 background: none;
                                 display: flex;
                                 flex-direction: column;
@@ -881,7 +885,7 @@ footer{
                                 flex-direction: column-reverse;
                             }
 
-                            .hosting{
+                            #hosting{
                                 background: none;
                                 display: grid;
                             }
@@ -916,35 +920,56 @@ footer{
 
                         @media (min-width: 1025px) and (max-width: 1440px) {
 
-                            .hostingCity{
-                                display: flex;
+                            #hosting{
+                                border-radius: 1.5rem;
+                                background-color: #F2F2F2;
+                                display: grid;
                                 gap: 30px;
-                                flex-direction: column-reverse;
-                                width: 100%;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                padding: 20px 20px 20px 20px;
+                            }
+
+
+                            .descriptionCard figcaption{
+                                color: #000;
+                                font-weight: bold;  
+                                margin: 0;
+                                margin-top: -15px;
+                                padding-left: 10px;
+                            }
+
+                            .hostingCard p{
+                                color: #000;
+                                font-size: 15px;
+                                margin: 0;
+                                margin-top: -15px;
+                                padding-left: 10px;
+                            }
+
+                            .hostingCard .descriptionStars{
+                                color: #0065fc;
+                                margin-top: 5px;
+                            }
+
+                            .hostingCard{
+                                height: 200px;
                             }
 
                             .hostingPopular{
-                                width: 100%;
-                                display: flex;
-                                flex-direction: row;
-                                height: 200px;
-                                align-items: center;                                
+                               padding-top: 15px;
                             }
-                            
-                            .hostingPopular >*{
-                                flex: 1 1 0;
+
+                            .hostingPopularTitle{
+                                padding-bottom: 15px;
                             }
-                            .hostingPopularCard{
-                                width: 100%;
-                                margin-left: -10px;
-                            }
+
                             .descriptionPopularImg img{
-                                width: 70px;
+                                width: 115px;
                             }
                             .descriptionPopularText{
-                                padding-left: 40px;
-                                width: 95%;
-                                font-size: 12px;
+                                padding-left: 85px;
+                                width: 75%;
+                                font-size: 15px;
                             }
                           }
 
