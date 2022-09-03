@@ -13,30 +13,29 @@ main{
 
 /*NAVBAR*/
 header {
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding: 0px 80px;
+    display: flex;
+    padding: 0px 65px;
 }
+
 .headerImg{
     margin-right: auto;
 }
 
 .headerNavbar li{
-    list-style: none;
     display: inline-block;
+    list-style: none;
     padding: 0 20px;    
 }
+
 .headerNavbar li>a{
     text-decoration: none;
-    color:#000;
 }
 
 .headerNavbar a:hover{
-    border-top: 5px #0065FC solid;
+    border-top: 5px blue solid;
     padding-top: 32px;
     transition-duration: 0.1s;
-    color:#0065FC;
 }
 
 
@@ -46,10 +45,18 @@ header {
 .map{
     border:  2px solid #F2F2F2;
     padding: 0 50px 0 15px;
-}    
+}  
+
+.search h1{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'raleway';
+    margin-bottom: 15px;
+}
 
 .searchForm{
     display: inline-flex;
+    margin-top: 25px;
     overflow: auto;
 }
 
@@ -80,18 +87,12 @@ header {
 .map::placeholder{
     align-items: center;
     color:#000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight:bolder;
     font-family: 'raleway';
 }
 
-.search h1{
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: 'raleway';
-    line-height: 10px;
-    margin-top: 40px;
-}
+
 
 
 /*FILTERS*/
@@ -123,9 +124,9 @@ header {
     height: 45px;
     margin: 15px;
 }
+
 .filtersCategory >div :hover{
      color: #0065FC;
-
 }
 
 .filtersCategory > div p{
@@ -151,11 +152,11 @@ header {
     width: 40px;
 }
 
-
 .filtersResult{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 35px;
 }
 
 .filtersResult i{
@@ -173,21 +174,8 @@ header {
 }
     
 
-/*HOSTINGS*/
 
-#hosting{
-    border-radius: 1.5rem;
-    background-color: #F2F2F2;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.hostingHeader{
-    grid-column: 1 / 4;
-    grid-row: 1;
-}
+/*HOSTINGS*/
 
 .hostingCity{
     column-gap: 30px;
@@ -195,6 +183,22 @@ header {
     flex-direction: row;
     grid-template-columns: 2.5fr 1fr;
     width: 100%;
+}
+
+#hosting{
+    border-radius: 1.5rem;
+    background-color: #F2F2F2;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 35px;
+}
+
+.hostingHeader{
+    grid-column: 1 / 4;
+    grid-row: 1;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .hostingCard{
@@ -205,6 +209,7 @@ header {
     height: auto;
     padding: 5px;
     transition-duration: 0.1s;
+    width: 100%;
 }
 
 .hostingCard:hover{
@@ -229,7 +234,7 @@ header {
 .hostingCard p{
     color: #000;
     font-size: 15px;
-    margin-left: 10px;
+    margin: 10px 0 10px 10px;
 }
 
 .hostingCard p>span{
@@ -255,7 +260,8 @@ header {
 }
 
 .hostingViewMore{
-    font-weight: bold;
+    font-weight: 600;
+    margin-top: 15px;
 }
 
 .hostingViewMore a{
@@ -268,21 +274,29 @@ header {
 }
 
 
-/* POPULAR */
 
-.hostingPopularTitle {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-}
+
+/* POPULAR */
 
 .hostingPopular{
     background-color: #F2F2F2;
-    border-radius: 1.5rem;
+    border-radius: 24px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 100%;
+    padding: 25px;
+    width: auto;
+}
+
+.hostingPopularTitle {
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.hostingPopularTitle i{
+    padding-left: 210px;
 }
 
 .hostingPopularCard{
@@ -290,10 +304,8 @@ header {
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 0 0 16px #0000002e;
-    height: 150px;
-    margin-top: -25px;
-    margin-left: 7%;
-    width: 85%;
+    height: 145px;
+    width: 100%;
 }
 
 .descriptionPopularCard{
@@ -304,41 +316,36 @@ header {
     text-decoration: none;
 }
 
-.descriptionPopularText{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 25%;
-    width: 100%;
-}
-
-.descriptionPopularText h4{
+.descriptionPopularCard figcaption{
     color: #000;
-    font-weight: bold;
+    font-weight: 600;
+    padding: 10px 10px 5px 105px;
 }
 
-.descriptionPopularText p{
+.hostingPopularCard p{
     color:#000;
     font-size: 15px;
+    padding: 10px 10px 5px 105px;
+    
 }
 
-.descriptionPopularText p>span{
+.hostingPopularCard p>span{
     font-weight: bold;
 }
 
-.descriptionPopularText>.descriptionStars [data-active=false]{
+.hostingPopularCard .descriptionStars [data-active=false]{
     color:#d9d9d9;
 }
 
-.descriptionPopularText >.descriptionStars{
+.hostingPopularCard .descriptionStars{
     color: #0065fc;
+    padding: 40px 10px 5px 105px;
 }
 
 .descriptionPopularImg img{
     border-radius: 20px 0 0 20px;
-    height: 142px;
-    margin-top: 4px;
-    margin-left: -35px; 
+    height: 137px;
+    padding: 4px;
     object-fit: cover;
     position:absolute;
     width: 110px;
@@ -348,20 +355,22 @@ header {
     transform: scale(1.02);
 }
 
+
+
+
+/*ACTIVITY*/
+
 #activity{
     border-radius: 20px;
     box-sizing: border-box;
     margin-top: 50px;
-    padding: 20px;
     width: 100%;
 }
-.activityTitle{
-    justify-content: left;
-    padding: 0;
-}
 
-#activity a{
-    width: 350px;
+#activity h2{
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .activityCard{
@@ -380,7 +389,7 @@ header {
     color: #000;
     display: flex;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     margin: 15px 15px 15px 15px;
 }
 
@@ -513,6 +522,8 @@ header {
 }
 
 
+
+
 /*FOOTER*/
 
 footer{
@@ -523,29 +534,52 @@ footer{
 .footerColumn{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 250px;
     width: 100%;
 }
+
+.footerSection{
+    line-height: 35px;
+    padding: 35px 100px 35px;
+}
+
+.footerSection h3{
+    font-weight: 700;
+}
+
+
 
 
 /*MEDIA QUERIES*/
 
                         @media (min-width: 320px) and (max-width: 480px) {
-
+                            
+                            
                             main{
+                                padding: 0;
+                            }
+
+                            header{
+                                display: grid;
                                 margin: 0;
                                 padding: 0;
                                 width: 100%;
                             }
-                            .headerNavbar {
-                                width: 100%;
-                                padding: 0;
+
+                            .headerImg{
+                                margin-left: 90px;
                             }
+
+                            .headerNavbar{
+                                text-align: center;
+                                width: auto;
+                            }
+
                             .headerNavbar ul{
-                                padding-bottom: 15px;
                                 border-bottom: solid #F2F2F2 3px;
                                 display: grid;
                                 grid-template-columns: 1fr 1fr;
+                                padding-bottom: 15px;
                                 width: auto;
                             }
                            
@@ -554,37 +588,17 @@ footer{
                             }
                             
                             .headerNavbarLi :hover{
-                                padding-bottom: 15px;
                                 border-bottom: 3px blue solid;
+                                padding-bottom: 15px;
                                 transition-duration: 0.1s;
-                                width: 100%;
-                            }
-
-                            .headerImg{
-                                padding-left: 30%;
                                 
                             }
-                            header{
-                                display: grid;
-                                width: 100%;
-                                padding: 0;
-                
-                            }
-                            
-                        
+
                             .search{
-                                margin-left: 3%;
                                 text-align: left;
+                                padding: 15px;
                             }
 
-                            .search h1{
-                                font-family: 'raleway';
-                                font-size: 20px;
-                                font-weight: bolder;
-                                line-height: 18px;
-                                margin-top: 40px;
-                            }
-                            
                             .search button>span{
                                 display: none;
                             }
@@ -594,20 +608,38 @@ footer{
                             }
 
                             .map{
-                                width:63%;    
+                                width:100%;
+                                padding: 15px;    
                             }
                             
                             .map::placeholder{
                                 font-size: 15px;
                                 width: 100%;
                             }
-                                
+                            
                             .filters h2{
-                                margin-left: 3%;
+                                margin-top: 35px;
+                                padding-left: 15px;
+                            }
+
+                            .filtersCategory{
+                                margin: 0;
+                                width: 100%;
+                            }
+
+                            .filtersCategory > div{
+                                font-size: 15px;
                             }
 
                             .filtersResult{
-                                margin-left: 3%;
+                                padding-left: 15px;
+                            }
+                            
+                            .filtersResult p{
+                                font-size: 14px;
+                                width: 275px;
+                                font-weight: 100;
+                               
                             }
 
                             .hostingCity{
@@ -620,20 +652,46 @@ footer{
                                 background: none;
                                 display: flex;
                                 flex-direction: column;
+                                padding: 15px;
                             }
                             
+                            .hostingHeader{
+                                font-size: 18px;
+                            }
+
                             .hostingPopular{
                                 border-radius: 0 0 0 0;
-                                height: 600px;
+                                height: auto;
+                                padding: 15px;
                             }
 
-                            .hostingPopular >header h2{
-                                width: 100%;
+                            .hostingPopularTitle{
+                                flex-wrap: wrap;
+                                font-size: 18px;
                             }
 
-                            .descriptionPopularText{
-                                padding-left: 45%;
-                                width: 75%;
+                            .hostingPopularTitle i{
+                                padding: 0;
+                                margin-left: 100px;
+                            }
+                            
+                            .hostingPopularCard figcaption{
+                                font-size: 15px;
+                                padding-top: 10px;
+                                padding-left: 125px;
+                            }
+
+                            .hostingPopularCard p{
+                                font-size: 13px;
+                                padding-left: 125px;
+                            }
+
+                            .hostingPopularCard  .descriptionStars{
+                                padding-left: 125px;
+                            }
+                            
+                            #activity{
+                                padding: 15px;
                             }
 
                             .activityColumn{
@@ -647,162 +705,205 @@ footer{
                             }
 
                             .activity1{
-                                height: 120px;
+                                height: 170px;
                                 width: 100%;
                             }
 
                             .activity1 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
 
                             .activity2{
-                                height: 120px;
+                                height: 170px;
                                 width: 100%;
                             }
 
                             .activity2 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
 
                             .activity3{
-                                height: 120px;
+                                height: 170px;
                                 width: 100%;
                             }
 
                             .activity3 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
 
                             .activity4{
-                                height: 120px;
+                                height: 170px;
                                 width: 100%;
                             }
 
                             .activity4 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
                         
                             .activity5{
-                               height: 120px; 
+                               height: 170px; 
                                width: 100%;
                             }
 
                             .activity5 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
 
                             .activity6{
-                                height: 120px;
+                                height: 170px;
                                 width: 100%;
                             }
                               
                             .activity6 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
 
                             .footerColumn{
-                            margin-left: 10px;
                                 flex-direction: column;
-                                width: 100%;
-                            }
-
-                            .aboutFooter{
-                                width: 100%;
-                            }
-                            
-                            .hostingFooter{
+                                gap: 5px;
+                                margin-top: 35px;
                                 width: 100%;
                             }
                             
-                            .assistanceFooter{
-                                width: 100%;
+                            .footerSection{
+                                margin-left: 15px;
+                                padding: 0;
                             }
                         }
 
                         @media (min-width: 481px) and (max-width: 767px) {
                         
                             main{
+                                padding: 0;
+                            }
+
+                            header{
+                                display: grid;
                                 margin: 0;
                                 padding: 0;
                                 width: 100%;
                             }
 
+                            .headerImg{
+                                margin-left: 175px;
+                            }
+
                             .headerNavbar{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-around;
+                                text-align: center;
+                                width: auto;
+                            }
+
+                            .headerNavbar ul{
+                                border-bottom: solid #F2F2F2 3px;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                padding-bottom: 15px;
+                                width: auto;
+                            }
+                           
+                            .headerNavbar a:hover{
+                                border-top: none;
+                            }
+                            
+                            .headerNavbarLi :hover{
+                                border-bottom: 3px blue solid;
+                                padding-bottom: 15px;
+                                transition-duration: 0.1s;
+                                
+                            }
+
+                            .search{
+                                text-align: left;
+                                padding: 15px;
+                            }
+
+                            .search button>span{
+                                display: none;
+                            }
+
+                            .search button>i{
+                                display: block;
+                            }
+     
+                            .filters h2{
+                                margin-top: 35px;
+                                padding-left: 15px;
+                            }
+
+                            .filtersResult{
+                                padding-left: 15px;
+                            }
+                            
+                            .filtersResult p{
+                                font-size: 18px;
+                                font-weight: 100;
+                                width: 270px;
                             }
 
                             .hostingCity{
                                 display: flex;
-                                gap: 30px;
                                 flex-direction: column-reverse;
+                                gap: 30px;
                             }
 
                             #hosting{
                                 background: none;
                                 display: flex;
                                 flex-direction: column;
+                                padding: 15px;
                             }
                             
-                            .search{
-                                margin-left: 3%;
-                                text-align: left;
-                            }
-
-                            .search h1{
-                                font-weight: bolder;
-                                font-family: 'raleway';
+                            .hostingHeader{
                                 font-size: 20px;
-                                line-height: 18px;
-                                margin-top: 40px;
-                            }
-                                
-                            .search button>span{
-                                display: none;
-                            }
-                            
-                            .search button>i{
-                                display: block;
-                            }
-                            
-                            .map{
-                                width:63%;    
-                            }
-                                
-                            .map::placeholder{
-                                font-size: 15px;
-                                width: 100%;
-                            }
-                            
-                            .filters h2{
-                                margin-left: 3%;
-                            }
-
-                            .filtersResult{
-                                margin-left: 3%;
                             }
 
                             .hostingPopular{
                                 border-radius: 0 0 0 0;
-                                height: 600px;
+                                height: auto;
+                                padding: 15px;
+                            }
+
+                            .hostingPopularTitle{
+                                flex-wrap: wrap;
+                                font-size: 20px;
+                            }
+
+                            .hostingPopularTitle i{
+                                padding: 0;
+                                margin-left: 230px;
                             }
                             
-                            .descriptionPopularText{
-                                padding-left: 20%;
-                                width: 75%;
+                            .hostingPopularCard figcaption{
+                                padding-top: 15px;
+                                padding-left: 130px;
+                            }
+
+                            .hostingPopularCard p{
+                                padding-left: 130px;
+                            }
+
+                            .hostingPopularCard  .descriptionStars{
+                                padding-left: 130px;
+                            }
+                            
+                            #activity{
+                                padding: 15px;
+                            }
+
+                            #activity h2{
+                                font-size: 20px;
                             }
                             
                             .activityColumn{
                                 width: 100%;
                             }
-                            
+
                             .activityCard{
                                 display: flex;
                                 flex-direction: column;
@@ -810,78 +911,107 @@ footer{
                             }
 
                             .activity1{
-                                height: 150px;
+                                height: 170px;
                                 width: 100%;
                             }
-                            
+
                             .activity1 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
-                            
+
                             .activity2{
-                                height: 150px;
+                                height: 170px;
                                 width: 100%;
                             }
-                            
+
                             .activity2 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
-                            
+
                             .activity3{
-                                height: 150px;
+                                height: 170px;
                                 width: 100%;
                             }
-                            
+
                             .activity3 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
 
                             .activity4{
-                                height: 150px;
+                                height: 170px;
                                 width: 100%;
                             }
 
                             .activity4 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
-
+                        
                             .activity5{
-                                height: 150px; 
-                                width: 100%;
+                               height: 170px; 
+                               width: 100%;
                             }
 
                             .activity5 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
 
                             .activity6{
-                                height: 150px;
+                                height: 170px;
                                 width: 100%;
                             }
-
+                              
                             .activity6 img{
-                                height: 65%;
+                                height: 70%;
                                 width: 100%;
                             }
 
                             .footerColumn{
-                                margin-left: 10px;
                                 flex-direction: column;
+                                gap: 5px;
+                                margin-top: 35px;
                                 width: 100%;
                             }
-                                
+                            
+                            .footerSection{
+                                margin-left: 15px;
+                                padding: 0;
+                            }
                         }
 
-                        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-                        
+                        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+                            
+                            main{
+                                padding: 0;
+                                width: 100%;
+                            }
+
+                            header {
+                                padding: 0px 15px;
+                            }
+                            
+                            .search{
+                               padding: 15px;
+                            }
+
+                            .filters h2{
+                                padding: 15px;
+                            }
+                            
+                            .filtersCategory{
+                                margin: 0;
+                            }
+
+                            .filtersResult{
+                                padding: 15px;
+                            }
+
                             .hostingCity{
                                 display: flex;
-                                gap: 30px;
                                 flex-direction: column-reverse;
                             }
 
@@ -889,36 +1019,55 @@ footer{
                                 background: none;
                                 display: grid;
                             }
+                            
+                            .hostingPopularTitle i{
+                                margin-left: 335px;
+                            }
 
                             .hostingPopular{
-                                height: 600px;
+                                border-radius: 0;
+                                height: auto;
                             }
                             
-                            .descriptionPopularText{
-                                padding-left: 18%;
-                                
+                            .hostingPopularCard figcaption{
+                                font-size: 18px;
+                                padding-top: 15px;
+                                padding-left: 140px;
                             }
 
-                            .activity2 h4{
-                                margin-top: -1px;
+                            .hostingPopularCard p{
+                                font-size: 16px;
+                                padding-left: 140px;
                             }
 
-                            .activity4 h4{
-                                margin-top: -1px;
+                            .hostingPopularCard  .descriptionStars{
+                                margin-top: 10px;
+                                padding-left: 140px;
                             }
 
-                            .activity5 h4{
-                                margin-top: -1px;
+                            #activity{
+                                margin-bottom: 20px;
+                                padding: 15px;
                             }
 
-                            .activity6 h4{
-                                margin-top: -1px;
+                            .footerSection{
+                                margin-top: 5px;
+                                padding: 0;
+                                width: 100%;
                             }
 
-                          
+                            .footerColumn{
+                                gap: 45px;
+                                margin-left: 15px;
+                                width: 100%;
+                            }
                         }  
 
-                        @media (min-width: 1025px) and (max-width: 1440px) {
+                        @media only screen and (min-width : 1224px) {
+
+                            .map::placeholder{
+                                font-size: 15px;
+                            }
 
                             #hosting{
                                 border-radius: 1.5rem;
@@ -928,57 +1077,130 @@ footer{
                                 grid-template-columns: 1fr 1fr 1fr;
                                 padding: 20px 20px 20px 20px;
                             }
-
-
+                            
                             .descriptionCard figcaption{
                                 color: #000;
                                 font-weight: bold;  
-                                margin: 0;
-                                margin-top: -15px;
-                                padding-left: 10px;
                             }
 
                             .hostingCard p{
                                 color: #000;
                                 font-size: 15px;
-                                margin: 0;
-                                margin-top: -15px;
-                                padding-left: 10px;
                             }
 
                             .hostingCard .descriptionStars{
                                 color: #0065fc;
-                                margin-top: 5px;
                             }
 
                             .hostingCard{
-                                height: 200px;
+                                height: auto;
                             }
-
-                            .hostingPopular{
-                               padding-top: 15px;
-                            }
-
+                            
                             .hostingPopularTitle{
-                                padding-bottom: 15px;
+                                align-items: center;
+                                flex-wrap: wrap;
+                                margin-top: -15px;
+                            }
+
+                            .hostingPopularTitle i{
+                                align-items: center;
+                                margin-left: 35px;
+                                margin-top: -20px;
                             }
 
                             .descriptionPopularImg img{
-                                width: 115px;
-                            }
-                            .descriptionPopularText{
-                                padding-left: 85px;
-                                width: 75%;
-                                font-size: 15px;
-                            }
-                          }
-
-                        @media (min-width: 1281px) {
-  
-                            .descriptionPopularText{
-                                padding-left: 25%;
+                                width: 90px;
                             }
                             
+                            .hostingPopularCard {
+                                margin-top: 20px;
+                            }
+
+                            .footerSection{
+                                padding: 0;
+                            }
+
+                            .footerColumn{
+                                gap: 200px;
+                                padding-left: 60px;
+                                width: 100%;
+                            }
+                        }
+
+                        @media only screen and (min-width : 1824px) {
+
+                            header {
+                                padding: 0px 100px;
+                            }
+
+                            .hostingHeader{
+                                font-size: 25px;
+                            }
+
+                            .descriptionCard figcaption{
+                                font-size: 18px;
+                            }
+
+                            .hostingCard p{
+                                font-size: 15px;
+                            }
+
+                            .hostingViewMore{
+                                font-size: 18px;
+                            }
+
+                            .hostingPopular{
+                                gap: 25px;
+                                padding: 15px;
+                            }
+
+                            .hostingPopularTitle{
+                                font-size: 25px;
+                                flex-wrap: wrap;
+                                margin-top: 2px;
+                            }
+                            
+                            .hostingPopularTitle i{
+                                margin-left: 185px;
+                                padding: 0;
+                            }
+
+                             .hostingPopularCard{
+                                height: 150px;
+                            }
+  
+                            .descriptionPopularImg img{
+                                width: 150px;
+                                height: 142px;
+                            }
+
+                            .descriptionPopularCard figcaption{
+                                font-size: 17px;
+                                padding: 10px 15px 5px 170px;
+                                width: auto;
+                            }
+                            
+                            .hostingPopularCard p{
+                                font-size: 15px;
+                                padding: 15px 10px 5px 170px;
+                            }
+
+                            .hostingPopularCard .descriptionStars{
+                                padding: 40px 10px 5px 170px;
+                                width: auto;
+                            }
+
+                            #activity h2{
+                                font-size: 25px;
+                            }
+                            
+                            .activityLink_activity >h4{
+                                font-size: 15px;
+                            }
+
+                            .footerSection{
+                                margin-left: 15px;
+                            }
                           }
                                 
                        
