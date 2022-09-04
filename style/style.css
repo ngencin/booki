@@ -2,12 +2,12 @@
 
 body {
     font-family: "Raleway", "Sans serif";
-    max-width: 100%;
+    width: 100%;
 }
 
 main{
     margin: auto;
-    padding: 5%;
+    padding: 2.5%;
 }
 
 
@@ -15,26 +15,37 @@ main{
 header {
     align-items: center;
     display: flex;
-    padding: 0px 65px;
+    height: 90px;
+    padding: 0 2.5% 0 2.5%;
+    width: 95%;
 }
 
-.headerImg{
-    margin-right: auto;
+.headerNavbar{
+    margin-left: auto;
+    height: 100%;
+    width: 300px;
+    
+}
+.headerNavbar ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
 }
 
-.headerNavbar li{
-    display: inline-block;
-    list-style: none;
-    padding: 0 20px;    
+.headerNavbarLi{
+    height: 100%;
+    text-align: center;
+    padding-top: 15%;
+    width: 100%;
+    border-top: 5px white solid;
 }
 
 .headerNavbar li>a{
     text-decoration: none;
 }
 
-.headerNavbar a:hover{
+.headerNavbarLi:hover{
     border-top: 5px blue solid;
-    padding-top: 32px;
     transition-duration: 0.1s;
 }
 
@@ -534,13 +545,14 @@ footer{
 .footerColumn{
     display: flex;
     flex-direction: row;
-    gap: 250px;
     width: 100%;
+    padding: 2.5%;
 }
 
 .footerSection{
     line-height: 35px;
-    padding: 35px 100px 35px;
+    width: 31.5%;
+    
 }
 
 .footerSection h3{
@@ -557,46 +569,55 @@ footer{
                             
                             main{
                                 padding: 0;
+                                margin-top: 10px;
+                                width: 100%;
                             }
 
+                            .search, .map, #hosting, .hostingPopular, #activity{
+                                padding: 2.5%;
+                            }
                             header{
                                 display: grid;
                                 margin: 0;
                                 padding: 0;
                                 width: 100%;
+                                height: 150px;
                             }
 
                             .headerImg{
-                                margin-left: 90px;
+                                width: 25%;
+                                padding: 5% 0% 5% 40%;
                             }
 
                             .headerNavbar{
                                 text-align: center;
-                                width: auto;
+                                width: 100%;
+                                height: 35px;
+                                border-bottom: solid #F2F2F2 3px;
                             }
 
                             .headerNavbar ul{
-                                border-bottom: solid #F2F2F2 3px;
                                 display: grid;
                                 grid-template-columns: 1fr 1fr;
-                                padding-bottom: 15px;
-                                width: auto;
+                                width: 100%;
+                                height: 100%;
                             }
                            
-                            .headerNavbar a:hover{
-                                border-top: none;
+                            .headerNavbarLi{
+                                padding: 0;
+                                height: 100%;
                             }
-                            
-                            .headerNavbarLi :hover{
+                           
+                            .headerNavbarLi:hover{
+                                border-top: none;
+                                padding: 0;
                                 border-bottom: 3px blue solid;
-                                padding-bottom: 15px;
                                 transition-duration: 0.1s;
-                                
+                                width: 100%;
                             }
 
                             .search{
                                 text-align: left;
-                                padding: 15px;
                             }
 
                             .search button>span{
@@ -608,8 +629,7 @@ footer{
                             }
 
                             .map{
-                                width:100%;
-                                padding: 15px;    
+                                width:100%;    
                             }
                             
                             .map::placeholder{
@@ -619,7 +639,7 @@ footer{
                             
                             .filters h2{
                                 margin-top: 35px;
-                                padding-left: 15px;
+                                margin-left: 15px;
                             }
 
                             .filtersCategory{
@@ -632,7 +652,7 @@ footer{
                             }
 
                             .filtersResult{
-                                padding-left: 15px;
+                                margin-left: 15px;
                             }
                             
                             .filtersResult p{
@@ -652,7 +672,6 @@ footer{
                                 background: none;
                                 display: flex;
                                 flex-direction: column;
-                                padding: 15px;
                             }
                             
                             .hostingHeader{
@@ -662,17 +681,17 @@ footer{
                             .hostingPopular{
                                 border-radius: 0 0 0 0;
                                 height: auto;
-                                padding: 15px;
                             }
 
                             .hostingPopularTitle{
                                 flex-wrap: wrap;
                                 font-size: 18px;
+                                width: 100%;
                             }
 
                             .hostingPopularTitle i{
                                 padding: 0;
-                                margin-left: 100px;
+                                margin-left: auto;
                             }
                             
                             .hostingPopularCard figcaption{
@@ -690,10 +709,6 @@ footer{
                                 padding-left: 125px;
                             }
                             
-                            #activity{
-                                padding: 15px;
-                            }
-
                             .activityColumn{
                                 width: 100%;
                             }
@@ -764,16 +779,20 @@ footer{
                                 width: 100%;
                             }
 
+                            footer{
+                                margin-top: 30px;
+                                width: 100%;
+                            }
+
                             .footerColumn{
                                 flex-direction: column;
-                                gap: 5px;
-                                margin-top: 35px;
                                 width: 100%;
+                                padding: 0;
                             }
                             
                             .footerSection{
-                                margin-left: 15px;
-                                padding: 0;
+                                padding: 2.5%;
+                                width: 95%;
                             }
                         }
 
@@ -781,46 +800,59 @@ footer{
                         
                             main{
                                 padding: 0;
+                                margin-top: 10px;
+                                width: 100%;
                             }
 
+                            .search, .map, #hosting, .hostingPopular, #activity{
+                                padding: 2.5%;
+                            }
                             header{
                                 display: grid;
                                 margin: 0;
                                 padding: 0;
                                 width: 100%;
+                                height: 150px;
                             }
 
                             .headerImg{
-                                margin-left: 175px;
+                                width: 25%;
+                                padding: 5% 0% 5% 40%;
                             }
 
                             .headerNavbar{
                                 text-align: center;
-                                width: auto;
+                                width: 100%;
+                                height: 35px;
+                                border-bottom: solid #F2F2F2 3px;
                             }
 
                             .headerNavbar ul{
-                                border-bottom: solid #F2F2F2 3px;
                                 display: grid;
                                 grid-template-columns: 1fr 1fr;
-                                padding-bottom: 15px;
-                                width: auto;
+                                width: 100%;
+                                height: 100%;
                             }
                            
-                            .headerNavbar a:hover{
-                                border-top: none;
+                            .headerNavbarLi{
+                                padding: 0;
+                                height: 100%;
                             }
-                            
-                            .headerNavbarLi :hover{
+                           
+                            .headerNavbarLi:hover{
+                                border-top: none;
+                                padding: 0;
                                 border-bottom: 3px blue solid;
-                                padding-bottom: 15px;
                                 transition-duration: 0.1s;
-                                
+                                width: 100%;
                             }
 
                             .search{
                                 text-align: left;
-                                padding: 15px;
+                                
+                            }
+                            .searchForm{
+                                width: 100%;
                             }
 
                             .search button>span{
@@ -833,17 +865,17 @@ footer{
      
                             .filters h2{
                                 margin-top: 35px;
-                                padding-left: 15px;
+                                margin-left: 15px;
                             }
 
                             .filtersResult{
-                                padding-left: 15px;
+                                margin-left: 15px;
                             }
                             
                             .filtersResult p{
                                 font-size: 18px;
                                 font-weight: 100;
-                                width: 270px;
+                                width: 85%;
                             }
 
                             .hostingCity{
@@ -856,7 +888,7 @@ footer{
                                 background: none;
                                 display: flex;
                                 flex-direction: column;
-                                padding: 15px;
+                                
                             }
                             
                             .hostingHeader{
@@ -866,17 +898,17 @@ footer{
                             .hostingPopular{
                                 border-radius: 0 0 0 0;
                                 height: auto;
-                                padding: 15px;
                             }
 
                             .hostingPopularTitle{
                                 flex-wrap: wrap;
                                 font-size: 20px;
+                                width: 100%;
                             }
 
                             .hostingPopularTitle i{
                                 padding: 0;
-                                margin-left: 230px;
+                                margin-left: auto;
                             }
                             
                             .hostingPopularCard figcaption{
@@ -891,10 +923,7 @@ footer{
                             .hostingPopularCard  .descriptionStars{
                                 padding-left: 130px;
                             }
-                            
-                            #activity{
-                                padding: 15px;
-                            }
+                           
 
                             #activity h2{
                                 font-size: 20px;
@@ -970,16 +999,20 @@ footer{
                                 width: 100%;
                             }
 
+                            footer{
+                                margin-top: 30px;
+                                width: 100%;
+                            }
+
                             .footerColumn{
                                 flex-direction: column;
-                                gap: 5px;
-                                margin-top: 35px;
                                 width: 100%;
+                                padding: 0;
                             }
                             
                             .footerSection{
-                                margin-left: 15px;
-                                padding: 0;
+                                padding: 2.5%;
+                                width: 95%;
                             }
                         }
 
@@ -993,11 +1026,15 @@ footer{
                             header {
                                 padding: 0px 15px;
                             }
-                            
-                            .search{
-                               padding: 15px;
-                            }
 
+                            .search, .map, #hosting, .hostingPopular, #activity{
+                                padding: 2.5%;
+                            }
+                            
+                            .searchForm{
+                                width: 100%;
+                            }
+                            
                             .filters h2{
                                 padding: 15px;
                             }
@@ -1021,7 +1058,7 @@ footer{
                             }
                             
                             .hostingPopularTitle i{
-                                margin-left: 335px;
+                                margin-left: auto;
                             }
 
                             .hostingPopular{
@@ -1049,17 +1086,15 @@ footer{
                                 margin-bottom: 20px;
                                 padding: 15px;
                             }
-
+    
                             .footerSection{
-                                margin-top: 5px;
+                                margin: 5px;
                                 padding: 0;
-                                width: 100%;
+                                width: 31.5%;
                             }
 
                             .footerColumn{
-                                gap: 45px;
-                                margin-left: 15px;
-                                width: 100%;
+                                width: 95%;
                             }
                         }  
 
@@ -1117,21 +1152,20 @@ footer{
                             }
 
                             .footerSection{
+                                margin: 5px;
                                 padding: 0;
+                                width: 31.5%;
                             }
 
                             .footerColumn{
-                                gap: 200px;
-                                padding-left: 60px;
-                                width: 100%;
+                                width: 95%;
                             }
+                            
                         }
 
                         @media only screen and (min-width : 1824px) {
 
-                            header {
-                                padding: 0px 100px;
-                            }
+                            
 
                             .hostingHeader{
                                 font-size: 25px;
@@ -1161,7 +1195,7 @@ footer{
                             }
                             
                             .hostingPopularTitle i{
-                                margin-left: 185px;
+                                margin-left: auto;
                                 padding: 0;
                             }
 
@@ -1198,9 +1232,7 @@ footer{
                                 font-size: 15px;
                             }
 
-                            .footerSection{
-                                margin-left: 15px;
-                            }
+                            
                           }
                                 
                        
