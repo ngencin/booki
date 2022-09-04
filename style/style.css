@@ -11,6 +11,8 @@ main{
 }
 
 
+
+
 /*NAVBAR*/
 header {
     align-items: center;
@@ -33,11 +35,11 @@ header {
 }
 
 .headerNavbarLi{
-    height: 100%;
-    text-align: center;
-    padding-top: 15%;
-    width: 100%;
     border-top: 5px white solid;
+    height: 100%;
+    padding-top: 15%;
+    text-align: center;
+    width: 100%;
 }
 
 .headerNavbar li>a{
@@ -48,6 +50,7 @@ header {
     border-top: 5px blue solid;
     transition-duration: 0.1s;
 }
+
 
 
 
@@ -186,6 +189,7 @@ header {
     
 
 
+
 /*HOSTINGS*/
 
 .hostingCity{
@@ -307,7 +311,7 @@ header {
 }
 
 .hostingPopularTitle i{
-    padding-left: 210px;
+    padding-left: auto;
 }
 
 .hostingPopularCard{
@@ -545,14 +549,13 @@ footer{
 .footerColumn{
     display: flex;
     flex-direction: row;
+    padding: 2.5%; 
     width: 100%;
-    padding: 2.5%;
 }
 
 .footerSection{
     line-height: 35px;
     width: 31.5%;
-    
 }
 
 .footerSection h3{
@@ -568,51 +571,52 @@ footer{
                             
                             
                             main{
-                                padding: 0;
                                 margin-top: 10px;
+                                padding: 0;
                                 width: 100%;
                             }
 
                             .search, .map, #hosting, .hostingPopular, #activity{
                                 padding: 2.5%;
                             }
+
                             header{
                                 display: grid;
+                                height: 150px;
                                 margin: 0;
                                 padding: 0;
                                 width: 100%;
-                                height: 150px;
                             }
 
                             .headerImg{
-                                width: 25%;
                                 padding: 5% 0% 5% 40%;
+                                width: 25%;
                             }
 
                             .headerNavbar{
+                                border-bottom: solid #F2F2F2 3px;
+                                 height: 35px;
                                 text-align: center;
                                 width: 100%;
-                                height: 35px;
-                                border-bottom: solid #F2F2F2 3px;
                             }
 
                             .headerNavbar ul{
                                 display: grid;
                                 grid-template-columns: 1fr 1fr;
-                                width: 100%;
                                 height: 100%;
+                                width: 100%;
                             }
                            
                             .headerNavbarLi{
-                                padding: 0;
                                 height: 100%;
+                                padding: 0;
                             }
                            
                             .headerNavbarLi:hover{
                                 border-top: none;
-                                padding: 0;
                                 border-bottom: 3px blue solid;
                                 transition-duration: 0.1s;
+                                padding: 0;
                                 width: 100%;
                             }
 
@@ -657,15 +661,14 @@ footer{
                             
                             .filtersResult p{
                                 font-size: 14px;
-                                width: 275px;
                                 font-weight: 100;
-                               
+                                width: 275px;
                             }
 
                             .hostingCity{
                                 display: flex;
-                                gap: 30px;
                                 flex-direction: column-reverse;
+                                gap: 30px;
                             }
 
                             #hosting{
@@ -690,8 +693,8 @@ footer{
                             }
 
                             .hostingPopularTitle i{
-                                padding: 0;
                                 margin-left: auto;
+                                padding: 0;
                             }
                             
                             .hostingPopularCard figcaption{
@@ -786,8 +789,8 @@ footer{
 
                             .footerColumn{
                                 flex-direction: column;
-                                width: 100%;
                                 padding: 0;
+                                width: 100%;
                             }
                             
                             .footerSection{
@@ -799,8 +802,8 @@ footer{
                         @media (min-width: 481px) and (max-width: 767px) {
                         
                             main{
-                                padding: 0;
                                 margin-top: 10px;
+                                padding: 0;
                                 width: 100%;
                             }
 
@@ -809,40 +812,40 @@ footer{
                             }
                             header{
                                 display: grid;
+                                height: 150px;
                                 margin: 0;
                                 padding: 0;
                                 width: 100%;
-                                height: 150px;
                             }
 
                             .headerImg{
-                                width: 25%;
                                 padding: 5% 0% 5% 40%;
+                                width: 25%;
                             }
 
                             .headerNavbar{
+                                border-bottom: solid #F2F2F2 3px;
+                                height: 35px;
                                 text-align: center;
                                 width: 100%;
-                                height: 35px;
-                                border-bottom: solid #F2F2F2 3px;
                             }
 
                             .headerNavbar ul{
                                 display: grid;
                                 grid-template-columns: 1fr 1fr;
-                                width: 100%;
                                 height: 100%;
+                                width: 100%;
                             }
                            
                             .headerNavbarLi{
-                                padding: 0;
                                 height: 100%;
+                                padding: 0;
                             }
                            
                             .headerNavbarLi:hover{
                                 border-top: none;
-                                padding: 0;
                                 border-bottom: 3px blue solid;
+                                padding: 0;
                                 transition-duration: 0.1s;
                                 width: 100%;
                             }
@@ -888,7 +891,6 @@ footer{
                                 background: none;
                                 display: flex;
                                 flex-direction: column;
-                                
                             }
                             
                             .hostingHeader{
@@ -907,8 +909,8 @@ footer{
                             }
 
                             .hostingPopularTitle i{
-                                padding: 0;
                                 margin-left: auto;
+                                padding: 0;
                             }
                             
                             .hostingPopularCard figcaption{
@@ -924,7 +926,6 @@ footer{
                                 padding-left: 130px;
                             }
                            
-
                             #activity h2{
                                 font-size: 20px;
                             }
@@ -1006,8 +1007,8 @@ footer{
 
                             .footerColumn{
                                 flex-direction: column;
-                                width: 100%;
                                 padding: 0;
+                                width: 100%;
                             }
                             
                             .footerSection{
@@ -1016,7 +1017,7 @@ footer{
                             }
                         }
 
-                        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+                        @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
                             
                             main{
                                 padding: 0;
@@ -1027,7 +1028,7 @@ footer{
                                 padding: 0px 15px;
                             }
 
-                            .search, .map, #hosting, .hostingPopular, #activity{
+                            .search, .map, #hosting, .hostingPopular, #activity, .filters h2, .filtersResult{
                                 padding: 2.5%;
                             }
                             
@@ -1035,16 +1036,8 @@ footer{
                                 width: 100%;
                             }
                             
-                            .filters h2{
-                                padding: 15px;
-                            }
-                            
                             .filtersCategory{
                                 margin: 0;
-                            }
-
-                            .filtersResult{
-                                padding: 15px;
                             }
 
                             .hostingCity{
@@ -1084,7 +1077,6 @@ footer{
 
                             #activity{
                                 margin-bottom: 20px;
-                                padding: 15px;
                             }
     
                             .footerSection{
@@ -1104,53 +1096,14 @@ footer{
                                 font-size: 15px;
                             }
 
-                            #hosting{
-                                border-radius: 1.5rem;
-                                background-color: #F2F2F2;
-                                display: grid;
-                                gap: 30px;
-                                grid-template-columns: 1fr 1fr 1fr;
-                                padding: 20px 20px 20px 20px;
-                            }
-                            
-                            .descriptionCard figcaption{
-                                color: #000;
-                                font-weight: bold;  
-                            }
-
-                            .hostingCard p{
-                                color: #000;
-                                font-size: 15px;
-                            }
-
-                            .hostingCard .descriptionStars{
-                                color: #0065fc;
-                            }
-
-                            .hostingCard{
-                                height: auto;
-                            }
-                            
-                            .hostingPopularTitle{
-                                align-items: center;
-                                flex-wrap: wrap;
-                                margin-top: -15px;
-                            }
-
                             .hostingPopularTitle i{
-                                align-items: center;
-                                margin-left: 35px;
-                                margin-top: -20px;
+                               margin-left: auto;
                             }
 
                             .descriptionPopularImg img{
                                 width: 90px;
                             }
                             
-                            .hostingPopularCard {
-                                margin-top: 20px;
-                            }
-
                             .footerSection{
                                 margin: 5px;
                                 padding: 0;
@@ -1164,8 +1117,6 @@ footer{
                         }
 
                         @media only screen and (min-width : 1824px) {
-
-                            
 
                             .hostingHeader{
                                 font-size: 25px;
